@@ -1,106 +1,410 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <link rel="shortcut icon" href="Images/Coder.jpeg" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
-        integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="bootstrap.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>⚡𝐓ʜᴇ Ƥᴀʀᴠ𝑒ᴢ ♔</title>
+    <title>The Parvez | Portfolio</title>
+    <link rel="shortcut icon" href="Images/Coder.jpeg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/all/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <span class="span"></span>
-    <span class="span"></span>
-    <span class="span"></span>
-    <span class="span"></span>
-    <header>
-        <div class="header">
-            <div style="font-size: 40px;">Hello, Coders👋🏻</div>
-            <div class="uh">
-                <span title="Home"><button type="button" class="btn btn-outline-primary">Home</button></span>
-                <span title="Portfolio"><button type="button" class="btn btn-outline-primary">Portfolio</button></span>
-                <span title="Youtube"><button type="button" class="btn btn-outline-primary">Youtube</button></span>
-                <span title="About"><button type="button" class="btn btn-outline-primary">About</button></span>
-            </div>
-        </div>
-    </header>
+    <!-- Animated Background Orbs -->
+    <div class="bg-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
 
-    <section>
-        <div>
-            <span class="anim">
-                <span></span><span></span><span></span><span></span>
-                <img class="mimg" src="Images/Coder.jpeg" alt="" align="right">
-            </span>
-            <div class="about">
-                <h1>𝐓ʜᴇ Ƥᴀʀᴠ𝑒ᴢ ♔</h1>
-                <p class="heading1"><b>About me</b></p>
-                <p>Hi, I’m <strong>The Parvez</strong>, and I’m super excited to Introduce myself! 🎉
-                    I am Proud of me because I am a <strong>Certified Curious Coder</strong>.
-                    I’m currently a <strong>1<sup>st</sup>-semester student</strong> pursuing <strong>Computer
-                        Science</strong> at <strong>PW IOI</strong>. I know
-                    termux so I don't get errors(I mean to say 98% times if I know the syntax)
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">The Parvez</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-nav-links">
+            <li><a href="#home" class="mobile-nav-link">Home</a></li>
+            <li><a href="#about" class="mobile-nav-link">About</a></li>
+            <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+            <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+            <li><a href="#education" class="mobile-nav-link">Education</a></li>
+            <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="social-sidebar">
+            <a href="https://github.com/the-parvez-16" target="_blank" class="social-link" aria-label="GitHub">
+                <i class="ph ph-github-logo"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/the-parvez-211256314" target="_blank" class="social-link" aria-label="LinkedIn">
+                <i class="ph ph-linkedin-logo"></i>
+            </a>
+            <a href="mailto:parvez.k.m.16@gmail.com" class="social-link" aria-label="Email">
+                <i class="ph ph-envelope"></i>
+            </a>
+            <a href="https://www.instagram.com/the_parvez_16/" target="_blank" class="social-link" aria-label="Instagram">
+                <i class="ph ph-instagram-logo"></i>
+            </a>
+            <a href="https://www.facebook.com/100060492342160/" target="_blank" class="social-link" aria-label="Facebook">
+                <i class="ph ph-facebook-logo"></i>
+            </a>
+        </div>
+
+        <div class="hero-container">
+            <div class="hero-content">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-title">The Parvez</h1>
+                <div class="hero-subtitle">
+                    <span class="typewriter-text" id="typewriter"></span>
+                    <span class="cursor">|</span>
+                </div>
+                <p class="hero-description">
+                    Passionate about building things with code and exploring the world of technology.
                 </p>
-            </div>
-        </div>
-        <div class="msk">
-            <p class="heading2"><b>My Skills</b></p>
-            <div style="display: grid;grid-template-columns: 8fr 4fr;">
-                <div>As a beginner, I’m still learning, but here are a few skills I’ve picked up so far:
-                        <li>Basics of <strong>C and Python</strong></li>
-                        <li>Knowledge of <strong>HTML, CSS</strong>, and <strong>JavaScript</strong> for simple web development
-                        </li>
-                        <li>Familiarity with <strong>Git</strong> and <strong>Github</strong></li>
-                        <li>Enthusiasm for learning on the go 🚀</li>
-                </div>
-                <div>
-                    <img src="https://cdn.iconscout.com/icon/free/png-512/free-c-logo-icon-download-in-svg-png-gif-file-formats--programming-langugae-freebies-pack-logos-icons-1175191.png?f=webp&w=512" alt="" height="80">
-                    <img src="https://cdn.iconscout.com/icon/free/png-512/free-python-logo-icon-download-in-svg-png-gif-file-formats--brand-development-tools-pack-logos-icons-226051.png?f=webp&w=512" alt="" height="80">
-                    <img src="https://cdn.iconscout.com/icon/free/png-512/free-html-logo-icon-download-in-svg-png-gif-file-formats--brand-development-tools-pack-logos-icons-225995.png?f=webp&w=512" alt="" height="80">
-                    <img src="https://cdn.iconscout.com/icon/free/png-512/free-css-logo-icon-download-in-svg-png-gif-file-formats--brand-development-tools-pack-logos-icons-226095.png?f=webp&w=512" alt="" height="80">
-                    <img src="https://cdn.iconscout.com/icon/free/png-512/free-javascript-logo-icon-download-in-svg-png-gif-file-formats--html-programming-language-coding-logos-icons-1720087.png?f=webp&w=512" alt="" height="80">
-                    <img src="https://cdn.iconscout.com/icon/free/png-512/free-git-logo-icon-download-in-svg-png-gif-file-formats--wordmark-programming-langugae-language-pack-logos-icons-1175220.png?f=webp&w=512" alt="" height="80">
-                    <img src="https://cdn.iconscout.com/icon/free/png-512/free-github-logo-icon-download-in-svg-png-gif-file-formats--wordmark-programming-language-logos-pack-icons-1174970.png?f=webp&w=512" alt="" height="80">
-                    
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View My Work</span>
+                        <i class="ph ph-arrow-down"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Contact Me</span>
+                        <i class="ph ph-paper-plane-tilt"></i>
+                    </a>
                 </div>
             </div>
-        </div>
-        <div class="ffam">
-            <p class="heading2">Fun fact about me</p>
-            <div style="display: grid;grid-template-columns: 10fr 2fr;">
-                <div>
-                • ⚡ Fun fact: I'm an ambivert so I can't talk with new people but I talk to known people more and more.<br>
-                •  I love <b>Gaming and waching Marvel movies</b> when I’m not coding!
+            <div class="hero-image">
+                <div class="image-container">
+                    <img src="Images/Coder.jpeg" alt="The Parvez - Computer Science Student and Developer" class="profile-img">
+                    <div class="image-ring"></div>
                 </div>
-                <div><img src="https://cdn.iconscout.com/icon/free/png-512/free-marvel-logo-icon-download-in-svg-png-gif-file-formats--brand-world-logos-vol-2-pack-icons-282124.png?f=webp&w=512" alt="" height="80"></div>
             </div>
         </div>
     </section>
 
-    <footer>
-        <div>
-            <p><b>Let's Connect</b></p>
-            <p>Feel free to reach out to me:<br>
-                    <b>• Github</b> : <a href="https://github.com/the-parvez-16"><i class="bi bi-github"></i></a><br>
-                    <b>• LinkedIn</b> : <a href="https://www.linkedin.com/in/the-parvez-211256314"><i class="bi bi-linkedin"></i></a><br>
-                    <b>• Email</b> : <a href="mailto:parvez.k.m.16@gmail.com"><i class="bi bi-envelope-fill"></i></a>
-            </p>
-        </div>
-        <form width="100">
-            <div class="form">
-                <div class="labels">Username<br>Email<br>Password</div>
-                <div>
-                    <input type="text" placeholder="Yourname" ><br>
-                    <input type="email" placeholder="xyz@email.com"><br>
-                    <input type="password" placeholder="!@#$">
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-text">About Me</span>
+                <span class="title-underline"></span>
+            </h2>
+            <div class="about-card glass-card">
+                <p class="about-text">
+                    Hi, I'm <strong>The Parvez</strong> — a 1st-semester Computer Science student at PW IOI and a certified curious coder. I love diving into new technologies, building projects from scratch, and learning something new every single day. When I'm not coding, you'll find me gaming or watching Marvel movies.
+                </p>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <i class="ph ph-student"></i>
+                        <span class="stat-label">CS Student</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="ph ph-map-pin"></i>
+                        <span class="stat-label">PW IOI</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="ph ph-code"></i>
+                        <span class="stat-label">Full Stack Curious</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="ph ph-game-controller"></i>
+                        <span class="stat-label">Gamer & Marvel Fan</span>
+                    </div>
                 </div>
             </div>
-            <span style="margin-left: 30px;"><button type="button" class="btn btn-outline-primary">Submit</button></span>
-        </form>
-    </footer>
-</body>
+        </div>
+    </section>
 
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-text">My Skills</span>
+                <span class="title-underline"></span>
+            </h2>
+            <div class="skills-grid">
+                <div class="skill-card glass-card">
+                    <div class="skill-icon" style="--skill-color: #A8B9CC;">
+                        <i class="ph ph-c-logo"></i>
+                    </div>
+                    <h3 class="skill-name">C</h3>
+                    <p class="skill-category">Programming Language</p>
+                </div>
+                <div class="skill-card glass-card">
+                    <div class="skill-icon" style="--skill-color: #3776AB;">
+                        <i class="ph ph-file-py"></i>
+                    </div>
+                    <h3 class="skill-name">Python</h3>
+                    <p class="skill-category">Programming Language</p>
+                </div>
+                <div class="skill-card glass-card">
+                    <div class="skill-icon" style="--skill-color: #E34F26;">
+                        <i class="ph ph-file-html"></i>
+                    </div>
+                    <h3 class="skill-name">HTML5</h3>
+                    <p class="skill-category">Web Technology</p>
+                </div>
+                <div class="skill-card glass-card">
+                    <div class="skill-icon" style="--skill-color: #1572B6;">
+                        <i class="ph ph-file-css"></i>
+                    </div>
+                    <h3 class="skill-name">CSS3</h3>
+                    <p class="skill-category">Web Technology</p>
+                </div>
+                <div class="skill-card glass-card">
+                    <div class="skill-icon" style="--skill-color: #F7DF1E;">
+                        <i class="ph ph-file-js"></i>
+                    </div>
+                    <h3 class="skill-name">JavaScript</h3>
+                    <p class="skill-category">Web Technology</p>
+                </div>
+                <div class="skill-card glass-card">
+                    <div class="skill-icon" style="--skill-color: #F05032;">
+                        <i class="ph ph-git-logo"></i>
+                    </div>
+                    <h3 class="skill-name">Git</h3>
+                    <p class="skill-category">Version Control</p>
+                </div>
+                <div class="skill-card glass-card">
+                    <div class="skill-icon" style="--skill-color: #181717;">
+                        <i class="ph ph-github-logo"></i>
+                    </div>
+                    <h3 class="skill-name">GitHub</h3>
+                    <p class="skill-category">Platform</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-text">My Projects</span>
+                <span class="title-underline"></span>
+            </h2>
+            <div class="projects-grid">
+                <article class="project-card glass-card">
+                    <div class="project-image">
+                        <div class="project-placeholder gradient-1">
+                            <i class="ph ph-briefcase"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Portfolio Website</h3>
+                        <p class="project-description">My personal portfolio website built with HTML, CSS, and JavaScript featuring a modern glassmorphism design.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="ph ph-globe"></i>
+                                <span>Live Demo</span>
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="ph ph-code"></i>
+                                <span>Source Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card glass-card">
+                    <div class="project-image">
+                        <div class="project-placeholder gradient-2">
+                            <i class="ph ph-cloud-sun"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Weather App</h3>
+                        <p class="project-description">A weather application that fetches real-time weather data using a public API.</p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">API</span>
+                            <span class="tag">CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="ph ph-globe"></i>
+                                <span>Live Demo</span>
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="ph ph-code"></i>
+                                <span>Source Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card glass-card">
+                    <div class="project-image">
+                        <div class="project-placeholder gradient-3">
+                            <i class="ph ph-calculator"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Calculator</h3>
+                        <p class="project-description">A fully functional calculator with a clean UI and keyboard support.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="ph ph-globe"></i>
+                                <span>Live Demo</span>
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="ph ph-code"></i>
+                                <span>Source Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-text">Education</span>
+                <span class="title-underline"></span>
+            </h2>
+            <div class="timeline">
+                <div class="timeline-line"></div>
+                <div class="timeline-item">
+                    <div class="timeline-node"></div>
+                    <div class="timeline-content glass-card">
+                        <h3 class="timeline-title">B.Tech in Computer Science</h3>
+                        <p class="timeline-institution">PW IOI</p>
+                        <p class="timeline-year">2024 – Present</p>
+                        <p class="timeline-description">Currently in my 1st semester, exploring the fundamentals of computer science and building a strong foundation in programming.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-text">Let's Connect</span>
+                <span class="title-underline"></span>
+            </h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card glass-card">
+                        <a href="mailto:parvez.k.m.16@gmail.com" class="contact-item">
+                            <div class="contact-icon">
+                                <i class="ph ph-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>parvez.k.m.16@gmail.com</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="contact-card glass-card">
+                        <a href="https://www.linkedin.com/in/the-parvez-211256314" target="_blank" class="contact-item">
+                            <div class="contact-icon">
+                                <i class="ph ph-linkedin-logo"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>LinkedIn</h4>
+                                <p>the-parvez-211256314</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="contact-card glass-card">
+                        <a href="https://github.com/the-parvez-16" target="_blank" class="contact-item">
+                            <div class="contact-icon">
+                                <i class="ph ph-github-logo"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>GitHub</h4>
+                                <p>the-parvez-16</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form glass-card" onsubmit="event.preventDefault(); alert('Thanks for your message! (Form is for demonstration)');">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Your message..." rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span>Send Message</span>
+                            <i class="ph ph-paper-plane-tilt"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="social-row">
+                <a href="https://github.com/the-parvez-16" target="_blank" class="social-btn" aria-label="GitHub">
+                    <i class="ph ph-github-logo"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/the-parvez-211256314" target="_blank" class="social-btn" aria-label="LinkedIn">
+                    <i class="ph ph-linkedin-logo"></i>
+                </a>
+                <a href="https://www.instagram.com/the_parvez_16/" target="_blank" class="social-btn" aria-label="Instagram">
+                    <i class="ph ph-instagram-logo"></i>
+                </a>
+                <a href="https://www.facebook.com/100060492342160/" target="_blank" class="social-btn" aria-label="Facebook">
+                    <i class="ph ph-facebook-logo"></i>
+                </a>
+                <a href="mailto:parvez.k.m.16@gmail.com" class="social-btn" aria-label="Email">
+                    <i class="ph ph-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">© 2025 The Parvez. All rights reserved.</p>
+            <button class="back-to-top" id="backToTop" aria-label="Back to top">
+                <i class="ph ph-arrow-up"></i>
+            </button>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
