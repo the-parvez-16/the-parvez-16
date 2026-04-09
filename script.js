@@ -124,8 +124,10 @@ function revealOnScroll() {
 // ========================================
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        if (href === '#' || href.length <= 1) return; // skip bare # links
         e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
+        const target = document.querySelector(href);
         if (target) {
             const headerOffset = 80;
             const elementPosition = target.getBoundingClientRect().top;
@@ -178,16 +180,12 @@ function updateNavBackground() {
 
 // ========================================
 // Parallax Effect for Background Orbs
+// Note: Disabled to preserve CSS float animation on orbs
+// The CSS animation keyframes handle orb movement
 // ========================================
-const orbs = document.querySelectorAll('.orb');
-
 function updateParallax() {
-    const scrollY = window.scrollY;
-    
-    orbs.forEach((orb, index) => {
-        const speed = (index + 1) * 0.2;
-        orb.style.transform = `translateY(${scrollY * speed}px)`;
-    });
+    // No-op - CSS float animation provides movement
+    // Parallax was removed because it overrides the CSS transform animation
 }
 
 // ========================================
@@ -198,7 +196,6 @@ function handleScroll() {
     revealOnScroll();
     toggleBackToTop();
     updateNavBackground();
-    updateParallax();
 }
 
 // ========================================
